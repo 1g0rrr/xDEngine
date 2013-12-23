@@ -1,9 +1,9 @@
-package xD.universal 
+package xDEngine.universal 
 {
 	import citrus.core.CitrusEngine;
 	import com.greensock.data.TweenLiteVars;
 	import com.greensock.TweenLite;
-	import xD.universal.UniQuad;
+	import xDEngine.universal.UniQuad;
 	/**
 	 * ...
 	 * @author ...

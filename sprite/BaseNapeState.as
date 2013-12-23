@@ -1,4 +1,4 @@
-package xD.sprite 
+package xDEngine.sprite 
 {
 	import citrus.core.State;
 	import citrus.physics.nape.Nape;

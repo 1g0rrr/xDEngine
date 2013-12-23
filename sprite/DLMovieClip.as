@@ -1,4 +1,4 @@
-package xD.sprite 
+package xDEngine.sprite 
 {
 	import citrus.core.CitrusEngine;
 	import citrus.view.spriteview.SpriteArt;

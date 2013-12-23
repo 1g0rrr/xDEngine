@@ -1,4 +1,4 @@
-package xD.sprite 
+package xDEngine.sprite 
 {
 	import flash.display.Sprite;
 	import flash.text.TextField;

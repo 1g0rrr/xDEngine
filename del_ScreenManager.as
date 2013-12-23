@@ -1,11 +1,11 @@
-package xD
+package xDEngine
 {
 	import citrus.core.CitrusEngine;
 	import citrus.core.State;
 	import flash.display.DisplayObject;
 	import flash.display.Sprite;
 	import org.osflash.signals.Signal;
-	import xD.defaultUI.DefaultAnimationBetweenStates;
+	import xDEngine.universal.AAnimationBetweenStates;
 	
 	/**
 	 * ...

@@ -1,9 +1,9 @@
-package xD.sprite 
+package xDEngine.sprite 
 {
 	import citrus.core.CitrusEngine;
 	import flash.events.Event;
-	import xD.universal.UniModalsManager;
-	import xD.universal.UniScreenManager;
+	import xDEngine.universal.UniModalsManager;
+	import xDEngine.universal.UniScreenManager;
 	
 	/**
 	 * ...

@@ -1,8 +1,8 @@
-package xD.universal 
+package xDEngine.universal 
 {
 	import starling.text.TextField;
-	import xD.sprite.DLTextField;
-	import xD.universal.UniSprite;
+	import xDEngine.sprite.DLTextField;
+	import xDEngine.universal.UniSprite;
 	
 	/**
 	 * ...

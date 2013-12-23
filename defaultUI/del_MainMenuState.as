@@ -3,8 +3,8 @@ package xD.defaultUI
 	import flash.events.Event;
 	import flash.events.MouseEvent;
 	import org.osflash.signals.Signal;
-	import xD.DLQuad;
-	import xD.DLTextField;
+	import xDEngine.DLQuad;
+	import xDEngine.DLTextField;
 	
 	/**
 	 * ...
