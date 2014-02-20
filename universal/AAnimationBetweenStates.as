@@ -26,9 +26,10 @@ package xDEngine.universal
 		public function play():void {
 		}
 		
-		public function destroy():void {
+		override public function destroy():void {
 			changeScreenSignal.removeAll();
 			endAnimationSignal.removeAll();
+			super.destroy();
 		}		
 	}
 

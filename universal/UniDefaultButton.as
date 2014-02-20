@@ -18,14 +18,14 @@ package xDEngine.universal
 		
 		public var clickSignal:Signal = new Signal(Object);
 		
-		public function UniDefaultButton(_width:Number, _height:Number, _color:int = 0xFF0000, _text:String = '') 
+		public function UniDefaultButton(_width:Number, _height:Number, _color:int = 0xFF0000, _text:String = '', _font:String = "Verdana", _fontSize:int = 12, _fontColor:int = 0x000000) 
 		{
 			super();
 			
 			_rectangle = new UniQuad(_width, _height, _color);
 			view.addChild(_rectangle.view);
 			
-			_labelTF = new UniTextField(_width, _height, _text);
+			_labelTF = new UniTextField(_width, _height, _text, _font, _fontSize, _fontColor);
 			view.addChild(_labelTF.view);
 			
 			if (isStarling) {
@@ -56,6 +56,18 @@ package xDEngine.universal
 				clickSignal.dispatch(this);
 			}
 		}		
+		
+		override public function destroy():void 
+		{
+			if (isStarling) {
+				view.removeEventListener(TouchEvent.TOUCH, touchHandler);
+			} else {
+				view.removeEventListener(MouseEvent.MOUSE_DOWN, mouseDownHandler);
+			}
+			
+			clickSignal.removeAll();
+			super.destroy();
+		}
 		
 	}
 

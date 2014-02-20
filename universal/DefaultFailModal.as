@@ -2,6 +2,7 @@ package xDEngine.universal
 {
 	import flash.events.Event;
 	import flash.events.MouseEvent;
+	import game.Settings;
 	import org.osflash.signals.Signal;
 	
 	/**
@@ -24,13 +25,13 @@ package xDEngine.universal
 			/* Можно вынести все эти зарисовки в отдельный класс, вид. */
 			/* В старлинге правда всё будет по-другому */
 			_rectangle = new UniQuad(300, 200, 0xA64B00);
-			_rectangle.x = _ce.stage.stageWidth / 2 - _rectangle.width / 2;
-			_rectangle.y = _ce.stage.stageHeight / 2 - _rectangle.height / 2;
+			_rectangle.x = Settings.stageWidth / 2 - _rectangle.width / 2;
+			_rectangle.y = Settings.stageHeight / 2 - _rectangle.height / 2;
 			addChild(_rectangle);
 			
 			
 			_restartBtn = new UniDefaultButton(80, 30, 0xFF7400, 'Restart'); /* Надо будет упростить создание, до текста. */
-			_restartBtn.x = _ce.stage.stageWidth / 2 - _restartBtn.width / 2;
+			_restartBtn.x = Settings.stageWidth / 2 - _restartBtn.width / 2;
 			_restartBtn.y = _rectangle.y + _rectangle.height - _restartBtn.height - 20;
 			addChild(_restartBtn);
 

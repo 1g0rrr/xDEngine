@@ -24,8 +24,9 @@ package xDEngine.universal
 			closeSignal.dispatch();
 		}
 		
-		public function destroy():void {
+		override public function destroy():void {
 			closeSignal.removeAll();
+			super.destroy();
 		}
 	}
 

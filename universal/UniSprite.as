@@ -31,6 +31,14 @@ package xDEngine.universal
 			view.addChild(child.view);
 		}
 		
+		public function addChildAt(child:UniSprite, index:int):void {
+			view.addChildAt(child.view, index);
+		}
+		
+		public function getChildIndex(child:UniSprite):int {
+			return view.getChildIndex(child.view);
+		}
+		
 		public function removeChild(child:UniSprite):void {
 			view.removeChild(child.view);
 		}
@@ -58,6 +66,12 @@ package xDEngine.universal
 		public function set scaleX(value:Number):void { view.scaleX = value };	
 		
 		public function get scaleY():Number { return view.scaleY };
-		public function set scaleY(value:Number):void { view.scaleY = value };		
+		public function set scaleY(value:Number):void { view.scaleY = value };
+		
+		public function destroy():void {
+			if(isStarling) {
+				starling.display.Sprite(_view).dispose();
+			}			
+		}
 	}
 }

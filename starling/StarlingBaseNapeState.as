@@ -23,9 +23,9 @@ package xDEngine.starling
 			super.initialize();
 			
 			_physics = new Nape("nape", {velocityIterations: 10, positionIterations: 10});
+			//_physics = new Nape("nape", {velocityIterations: 14, positionIterations: 14});
 			add(_physics);
-			_physics.visible = true;	
-			
+			//_physics.visible = true;	
 		}
 		
 	}

@@ -93,9 +93,10 @@ package xDEngine.universal
 			}
 		}
 		
-		public function destroy():void
+		override public function destroy():void
 		{
 			_animationBetweenStates.destroy();
+			super.destroy();
 		}
 	}
 

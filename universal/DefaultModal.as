@@ -4,6 +4,7 @@ package xDEngine.universal
 	import com.greensock.data.TweenLiteVars;
 	import com.greensock.TweenLite;
 	import flash.events.MouseEvent;
+	import game.Settings;
 	import org.osflash.signals.Signal;
 	
 	/**
@@ -23,7 +24,7 @@ package xDEngine.universal
 		{
 			super();
 			
-			_alphaBG = new UniQuad(_ce.stage.stageWidth, _ce.stage.stageHeight, 0x000000);
+			_alphaBG = new UniQuad(Settings.stageWidth, Settings.stageHeight, 0x000000);
 			_alphaBG.view.alpha = 0.2;
 			view.addChild(_alphaBG.view);
 			

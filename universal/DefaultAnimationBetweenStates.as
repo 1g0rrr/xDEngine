@@ -14,8 +14,8 @@ package xDEngine.universal
 		private var _tween:TweenLite = null;
 		private var _duration:Number = 0.5;
 		
-		private var _quadWidth:int = 1000;
-		private var _quadHeight:int = 1000;
+		private var _quadWidth:int = 1024;
+		private var _quadHeight:int = 768;
 		
 		public function DefaultAnimationBetweenStates() 
 		{

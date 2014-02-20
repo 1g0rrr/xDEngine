@@ -19,7 +19,6 @@ package xDEngine.universal
 			if (isStarling) 
 			{
 				var starlingQuad:* = new Quad(_width, _height, _color);
-				
 				view.addChild(starlingQuad);
 			}
 			else 
